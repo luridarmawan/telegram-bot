@@ -4,18 +4,18 @@
 
 ## What is it?
 
-**Telegram Bot** ini adalah bot telegram sederhana yang dibangun dengan menggunakan bahasa **Pascal** menggunakan framework [FastPlaz](https://fastplaz.com). Dijalankan di desktop, bukan sebagai _services_.
+**Telegram Bot** ini adalah bot telegram sederhana yang dibangun dengan menggunakan bahasa **Pascal** dengan framework [**FastPlaz**](https://fastplaz.com). Dijalankan di desktop, bukan sebagai _services_.
 
-Pengoperasiannya sederhana, cukup menjalankan aplikasinya di laptop/pc, selama jaringan internet telah terhubung.
+Pengoperasiannya sederhana, cukup menjalankan aplikasinya di laptop/pc saja, selama jaringan internet telah terhubung.
 
-Di telegram-bot ini belum disediakan NLP untuk handle pesan yang masuk. Jika ingin menyematkan NLP, coba baca bagian bawah README ini.
+Di telegram-bot ini belum disediakan [NLP](https://medium.com/@luridarmawan/natural-language-processing-nlp-sederhana-dari-carik-bot-78952b618695) untuk handle pesan yang masuk. Jika ingin menyematkan [NLP](https://medium.com/@luridarmawan/natural-language-processing-nlp-sederhana-dari-carik-bot-78952b618695), coba baca bagian bawah README ini.
 
 
 ## Why use it?
 
 **Ringan Tanpa Beban**
 
-Sebagian teman-teman mendapatkan kesulitan saat mengimplementasikan telegram bot dalam method hook. Mengingat harus menyediakan server/vps/hosting untuk menangkap hit dari telegram, dan juga perlu seting SSL juga. Memang ada yang free, tapi tetep sebagian diantara kita merasakan kesulitan.
+Sebagian teman-teman mendapatkan kesulitan saat mengimplementasikan telegram bot dalam method hook. Mengingat harus menyediakan server/vps/hosting untuk menangkap hit dari telegram, dan juga perlu seting SSL juga. Memang ada yang free, tapi tetap sebagian diantara kita merasakan kesulitan.
 
 Nahh...
 Dengan telegram-bot ini, anda cukup menjalankan aplikasi ini di laptop/pc. Cukup menyediakan koneksi internet yang baik.
@@ -28,7 +28,7 @@ Aplikasi ini ringan, bahkan ringan tanpa beban. Bisa dikompilasi antar platform 
 
 ### Requirements
 
-- [FastPlaz_runtime](http://www.fastplaz.com/)
+- [**FastPlaz**_runtime](http://www.fastplaz.com/)
 
 ### Instalasi
 
@@ -119,7 +119,7 @@ Aplikasi ini adalah contoh membuat bot telegram yang sederhana, belum ada NLP-ny
 
 Untuk penggunaan dengan trafik yang tinggi, saya menyarankan untuk menggunakan telegram bot yang memanfaatkan method webhook.
  
-Untuk kebutuhan ini, anda bisa menggunakan [Carik Bot](https://carik.id) yang ada di mana-mana, di banyak layanan pesan singkat seperti Telegram, Facebook Messenger, Line, Instagram, bahkan ada pula untuk Android App.
+Untuk kebutuhan ini, anda bisa menggunakan [**Carik Bot**](https://carik.id) yang ada di mana-mana, di banyak layanan pesan singkat seperti [Telegram](https://t.me/carikbot), [Facebook Messenger](https://m.me/Carik.Bot), [Line](https://line.me/ti/p/~@carik), [Instagram](https://www.instagram.com/carikbot/), bahkan ada pula untuk [Android App](https://carik.id/app).
 
 ## Video Compilasi Source
 
