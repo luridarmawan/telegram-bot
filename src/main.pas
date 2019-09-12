@@ -185,13 +185,17 @@ var
 begin
   memResult.Lines.Add(Telegram.RequestContent);
   s := FormatDateTime('yyyy/mm/dd HH:nn:ss', Now) + ' | '
-    //+ Telegram.UserID + ':'
+    + Telegram.UserID + ':'
     + Telegram.FullName + ' » ' + AMessage;
   mem.Lines.Add(s);
 
   // Process Your Message here
-
   AReply := 'echo: ' + AMessage;
+
+  // example: using 'if'
+  if AMessage = 'hi' then
+    AReply := 'hi juga';
+
   AHandled := True; // set true to send reply to sender
 end;
 
