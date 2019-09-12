@@ -1,4 +1,15 @@
+{
+  This file is part of the FastPlaz example.
+  (c) Luri Darmawan <luri@fastplaz.com>
+  For the full copyright and license information, please view the LICENSE
+  file that was distributed with this source code.
+}
 unit main;
+{
+  This project is an Example of a Simple Telegram Bot,
+  using the Poll method.
+  The WebHook method is recommended
+}
 
 {$mode objfpc}{$H+}
 
@@ -9,6 +20,7 @@ uses
   Graphics, Dialogs, StdCtrls, ExtCtrls, ComCtrls, Buttons, Spin, string_helpers;
 
 const
+  _DEVELOPMENT_ = false;
   TELEGRAM_TOKEN = 'telegram/default/token';
 
 type
@@ -68,8 +80,8 @@ procedure Delay(AMiliSeconds: DWORD);
 var
   DW: DWORD;
 begin
-  DW := GetTickCount;
-  while (GetTickCount < DW + AMiliSeconds) and (not Application.Terminated) do
+  DW := GetTickCount64;
+  while (GetTickCount64 < DW + AMiliSeconds) and (not Application.Terminated) do
     Application.ProcessMessages;
 end;
 
@@ -93,6 +105,7 @@ procedure TfMain.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
   Telegram.Free;
   Config.Free;
+  CloseAction := caFree;
 end;
 
 procedure TfMain.btnStartClick(Sender: TObject);
@@ -103,16 +116,17 @@ begin
   if tmrPoll.Enabled then
   begin
     mainPageControl.ActivePage := TabSheet1;
-    mem.Lines.Add('== Polling starts every ' + IntToStr(edtInterval.Value) + ' miliseconds.');
+    mem.Lines.Add('== Polling starts every ' + IntToStr(edtInterval.Value) +
+      ' miliseconds.');
     btnStart.Caption := '&Stop';
     btnStart.Color := clRed;
-    barBottom.Panels[2].Text:= 'Service running ...';
+    barBottom.Panels[2].Text := 'Service running ...';
   end
   else
   begin
     btnStart.Caption := '&Start';
     btnStart.Color := clGreen;
-    barBottom.Panels[2].Text:= '';
+    barBottom.Panels[2].Text := '';
   end;
 end;
 
@@ -140,6 +154,7 @@ end;
 
 procedure TfMain.FormKeyDown(Sender: TObject; var Key: word; Shift: TShiftState);
 begin
+  if not _DEVELOPMENT_ then Exit;
   if key = 27 then
   begin
     key := 0;
