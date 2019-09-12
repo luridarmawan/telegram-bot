@@ -1,0 +1,22 @@
+{
+  "systems": {
+    "sitename": "Simple Telegram Bot",
+    "slogan": "Simple Telegram Bot with FastPlaz",
+    "baseurl": "https://carik.id"
+  },
+  "telegram": {
+    "default": {
+      "token": ""
+    }
+  },
+  "line": {
+    "default": {
+      "token": ""
+    }
+  },
+  "facebook": {
+    "default": {
+      "token": ""
+    }
+  }
+}

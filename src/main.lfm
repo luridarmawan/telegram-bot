@@ -1,0 +1,190 @@
+object fMain: TfMain
+  Left = 15
+  Height = 345
+  Top = 151
+  Width = 611
+  Caption = 'Simple Telegram Bot'
+  ClientHeight = 345
+  ClientWidth = 611
+  KeyPreview = True
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  Position = poDesktopCenter
+  LCLVersion = '2.0.4.0'
+  object barBottom: TStatusBar
+    Left = 0
+    Height = 18
+    Top = 327
+    Width = 611
+    Panels = <    
+      item
+        Width = 50
+      end    
+      item
+        Width = 50
+      end    
+      item
+        Width = 50
+      end>
+    SimplePanel = False
+  end
+  object pnlTop: TPanel
+    Left = 0
+    Height = 40
+    Top = 0
+    Width = 611
+    Align = alTop
+    ClientHeight = 40
+    ClientWidth = 611
+    TabOrder = 3
+    object edtInterval: TSpinEdit
+      Left = 80
+      Height = 21
+      Top = 8
+      Width = 66
+      MaxValue = 10000
+      MinValue = 2000
+      TabOrder = 0
+      Value = 2000
+    end
+    object Label1: TLabel
+      Left = 8
+      Height = 16
+      Top = 11
+      Width = 59
+      Caption = 'Poll Delay'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 152
+      Height = 16
+      Top = 11
+      Width = 65
+      Caption = 'milisecond'
+      ParentColor = False
+    end
+    object btnStart: TButton
+      Left = 246
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = '&Start'
+      Color = clGreen
+      OnClick = btnStartClick
+      TabOrder = 1
+    end
+  end
+  object pnlBottom: TPanel
+    Left = 0
+    Height = 63
+    Top = 264
+    Width = 611
+    Align = alBottom
+    ClientHeight = 63
+    ClientWidth = 611
+    TabOrder = 2
+    object Label3: TLabel
+      Left = 10
+      Height = 16
+      Top = 9
+      Width = 76
+      Caption = 'Telegram ID:'
+      ParentColor = False
+    end
+    object edtTelegramID: TEdit
+      Left = 94
+      Height = 21
+      Top = 8
+      Width = 119
+      OnEnter = edtTelegramIDEnter
+      TabOrder = 0
+    end
+    object Label4: TLabel
+      Left = 28
+      Height = 16
+      Top = 32
+      Width = 58
+      Caption = 'Message:'
+      ParentColor = False
+    end
+    object edtMessage: TEdit
+      Left = 94
+      Height = 21
+      Top = 32
+      Width = 388
+      TabOrder = 1
+    end
+    object btnSendMessage: TBitBtn
+      Left = 498
+      Height = 50
+      Top = 8
+      Width = 74
+      Caption = 'Send'
+      OnClick = btnSendMessageClick
+      TabOrder = 2
+    end
+  end
+  object mainPageControl: TPageControl
+    Left = 0
+    Height = 224
+    Top = 40
+    Width = 611
+    ActivePage = TabSheet2
+    Align = alClient
+    TabIndex = 1
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Log'
+      ClientHeight = 194
+      ClientWidth = 761
+      object mem: TMemo
+        Left = 30
+        Height = 168
+        Top = 16
+        Width = 428
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = 11
+        Font.Name = 'Courier New'
+        Lines.Strings = (        )
+        ParentFont = False
+        ReadOnly = True
+        TabOrder = 0
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Log #'
+      ClientHeight = 194
+      ClientWidth = 605
+      object memResult: TMemo
+        Left = 114
+        Height = 133
+        Top = 27
+        Width = 375
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = 11
+        Font.Name = 'Courier New'
+        Lines.Strings = (        )
+        ParentFont = False
+        ReadOnly = True
+        TabOrder = 0
+      end
+    end
+  end
+  object TrayIcon1: TTrayIcon
+    left = 616
+    top = 216
+  end
+  object ApplicationProperties1: TApplicationProperties
+    left = 662
+    top = 216
+  end
+  object tmrPoll: TTimer
+    Enabled = False
+    Interval = 2000
+    OnTimer = tmrPollTimer
+    left = 710
+    top = 216
+  end
+end
