@@ -110,6 +110,12 @@ end;
 
 procedure TfMain.btnStartClick(Sender: TObject);
 begin
+  if Telegram.Token.IsEmpty then
+  begin
+    mem.Lines.Add('Token invalid. Check file config.json');
+    Exit;
+  end;
+
   tmrPoll.Interval := edtInterval.Value;
   tmrPoll.Enabled := not tmrPoll.Enabled;
   edtInterval.Enabled := not tmrPoll.Enabled;
