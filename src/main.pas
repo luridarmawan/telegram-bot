@@ -190,8 +190,12 @@ begin
   mem.Lines.Add(s);
 
   // Process Your Message here
-
   AReply := 'echo: ' + AMessage;
+
+  // example: using 'if'
+  if AMessage = 'hi' then
+    AReply := 'hi juga';
+
   AHandled := True; // set true to send reply to sender
 end;
 
