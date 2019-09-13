@@ -8,7 +8,7 @@
 
 Pengoperasiannya sederhana, cukup menjalankan aplikasinya di laptop/pc saja, selama jaringan internet telah terhubung.
 
-Di telegram-bot ini belum disediakan [NLP](https://medium.com/@luridarmawan/natural-language-processing-nlp-sederhana-dari-carik-bot-78952b618695) untuk handle pesan yang masuk. Jika ingin menyematkan [NLP](https://medium.com/@luridarmawan/natural-language-processing-nlp-sederhana-dari-carik-bot-78952b618695), coba baca bagian bawah README ini.
+Di telegram-bot ini **sudah** disediakan [**NLP**](https://medium.com/@luridarmawan/natural-language-processing-nlp-sederhana-dari-carik-bot-78952b618695) untuk handle pesan yang masuk, sama seperti yang digunakan oleh [**CarikBot**](https://carik.id).
 
 
 ## Why use it?
@@ -115,7 +115,7 @@ Jika pesan akan diabaikan dan tidak mengirimkan perlu balasan, cukup langsung `E
 
 ### Catatan
 
-Aplikasi ini adalah contoh membuat bot telegram yang sederhana, belum ada NLP-nya dan bukan untuk kebutuhan trafik yang tinggi.
+Aplikasi ini adalah contoh membuat bot telegram yang sederhana, tersedia NLP sederhana pula, namun bukan untuk kebutuhan trafik yang tinggi.
 
 Untuk penggunaan dengan trafik yang tinggi, saya menyarankan untuk menggunakan telegram bot yang memanfaatkan method webhook.
  
