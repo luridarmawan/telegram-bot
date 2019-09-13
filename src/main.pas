@@ -16,11 +16,12 @@ unit main;
 interface
 
 uses
+  simplebot_controller, fastplaz_handler,
   telegram_integration, config_lib, Classes, SysUtils, Forms, Controls,
   Graphics, Dialogs, StdCtrls, ExtCtrls, ComCtrls, Buttons, Spin, string_helpers;
 
 const
-  _DEVELOPMENT_ = false;
+  _DEVELOPMENT_ = true;
   TELEGRAM_TOKEN = 'telegram/default/token';
 
 type
@@ -57,9 +58,10 @@ type
     procedure FormShow(Sender: TObject);
     procedure tmrPollTimer(Sender: TObject);
   private
-    Config: TMyConfig;
+    //Config: TMyConfig;
     Telegram: TTelegramIntegration;
     inProcess: boolean;
+    NLP: TSimpleBotModule;
 
     procedure onMessageHandler(AMessage: string; var AReply: string;
       var AHandled: boolean);
@@ -95,14 +97,26 @@ begin
   Telegram.Token := Config[TELEGRAM_TOKEN];
   Telegram.OnMessage := @onMessageHandler;
 
+  // NLP Engine
+  // NLP data at folder 'files/nlp/*'
+  NLP := TSimpleBotModule.Create;
+  NLP.TrimMessage := False;
+  NLP.CLI := True;
+
   inProcess := False;
   mem.Align := alClient;
   memResult.Align := alClient;
   mainPageControl.ActivePage := TabSheet1;
+
+  mem.Font.Name := 'Courier';
+  mem.Font.Size := 11;
+  memResult.Font.Name := 'Courier';
+  memResult.Font.Size := 11;
 end;
 
 procedure TfMain.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
+  NLP.Free;
   Telegram.Free;
   Config.Free;
   CloseAction := caFree;
@@ -183,20 +197,21 @@ procedure TfMain.onMessageHandler(AMessage: string; var AReply: string;
 var
   s: string;
 begin
+  // example: using 'if'
+  //if AMessage = 'hi' then
+  //  AReply := 'hi juga';
+
+  // Process Your Message here
+  s := NLP.Exec(AMessage);
+  AReply := NLP.ResponseText.Text.Trim;
+  AHandled := True; // set true to send reply to sender
+
   memResult.Lines.Add(Telegram.RequestContent);
   s := FormatDateTime('yyyy/mm/dd HH:nn:ss', Now) + ' | '
     + Telegram.UserID + ':'
-    + Telegram.FullName + ' » ' + AMessage;
+    + Telegram.FullName + ' | ' + AMessage + ' » ' + AReply;
   mem.Lines.Add(s);
 
-  // Process Your Message here
-  AReply := 'echo: ' + AMessage;
-
-  // example: using 'if'
-  if AMessage = 'hi' then
-    AReply := 'hi juga';
-
-  AHandled := True; // set true to send reply to sender
 end;
 
 //Delay(250);

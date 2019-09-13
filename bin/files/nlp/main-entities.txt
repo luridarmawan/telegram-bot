@@ -1,0 +1,642 @@
+[Example]
+action=example
+say=example
+
+[WordCencor]
+bacot=bacot
+gila=gila|gendeng|crazy|pea|gilo|pantek|bangsat
+binatang=asu|anjing|babi|kampret|cebong
+lainnya=taix|taik|tai|taek|pret|setan|kakeane|dancuk|jancok|jancuk|jiancuk|ndasmu
+sexuality=kontol|ngentu|bawuk|ngentot|memek|ngewe|jembut|sempak|bokep|coli
+wtf=what the fuck|fuck|wtf
+
+[Greeting]
+hi=hi|hii|hai|haii|hei|hey|helo|halo|hallo|halow|hallow|hello|hellow|hola|hox|hay|ji|ho|haloo|/hi
+salam=salam
+jawa=kulonuwun|nuwun
+lalala=lalala
+
+[SalamMuslim]
+salam=assalamualaikum|assalamu'alaikum|assalamualaykum|assalamu'alaykum|assalamu alaikum
+salam2=assalaamualaikum|assalaamu'alaikum|assalaamualaykum|assalaamu'alaykum|assalamu alaikum
+salamlengkap=assalamu alaikum wa rahmatullah|assalamu'alaikum wa rahmatullah
+salam4=assalaamu'alaikum
+
+[SalamArabic]
+salam1=السَّلاَمُ
+salam2=السَّلاَمُ
+salam3=ggrrr
+salam4=السلام عليكم
+
+[HubunganKeluarga]
+kakek=kakek|opa|mbah|kong|engkong
+nenek=nenek|oma
+ayah=ayah|abah|bapak|bapa|pak|papa|papi
+ibu=ibu|bu|umi|bunda|mama|mami
+suami=suami
+istri=istri
+kakak=kakak|kaka|abang|mas|mbak
+adik=adik|adek
+tante=tante|bulik
+budhe=budhe
+paman=paman|mamang|lek|om|paklik|pakdhe|pakde
+
+[OtherBot]
+alexa=alexa|aleksa|echo
+bangjoni=bang joni|bangjoni
+cortana=cortana|kortana
+google=google
+kataai=kata.ai|kataai
+rinna=rinna|rina
+simsimi=simi|simsimi
+siri=siri
+iyem=yem|iyem
+
+[Sapaan]
+aku=aku|ku|saya|sy|gua|gue|gwe|gw|akyu|ane|me|diriku|私
+kamu=kamu|kmu|mu|km|kamyu|kau|dikau|engkau|ngkau|anda|lu|loe|ente|sampean|samean|you|yu|dirimu|kowe|koe
+dia=dia
+kakek=kakek|kek|mbah|kong
+pakdhe=pakdhe
+paklik=paklik|paman
+bapak=bapak|pak|ayah|papa|papi
+ibu=ibu|bu|bunda|mama|mami
+kakak=kk|kakak|teteh|mas|mbak|kang
+adik=adik|adek|dek
+bot=bot
+gus=gus
+sayang=sayang|say|yayang|beb|honey|manis|cinta|bidadari|pujaan|pujaanku
+anda=anda|panjenengan|njenengan
+
+[HalTerlarang]
+narkoba=ganja|inex|narkoba|morfin|candu
+miras=wiski|vodka
+mabuk=mabuk|mabok
+sex=kentu|ngentot|sex|homo|lesbian|lesbi
+
+[Keadaan]
+baik=baik|sehat|alhamdulillah|alhamdulilah|kuat|sembuh
+buruk=buruk|sakit|demam|capek|lelah|sepi|pusing|pusing2|mual|mual2|pening|malas|males
+
+[Cuaca]
+hujan=hujan|gerimis
+mendung=mendung|gelap
+panas=panas|gerah
+berawan=berawan
+kemaran=kemarau
+
+[Tujuan]
+tujuan=tujuan
+ke=ke
+untuk=untuk|utk|unt|buat
+
+[Pasangan]
+pasangan=jodoh|pasangan
+suami=suami|swami|laki|cowo
+istri=istri|bini|wife|cewe
+pacar=pacar|kekasih
+mantan=mantan
+
+[Abaikan]
+yuk=yuk
+dong=dong|dongg|doong|deh|dehh|deehh
+
+[TanyaLokasi]
+dimana=di mana|dimana|mana
+
+[Pembayaran]
+cicilan=cicilan|cicil|angsuran|angsur|installment|instalment
+tunai=tunai
+
+[Hiburan]
+nonton=nonton|bioskop|film
+konser=konser
+
+[Transportasi]
+pesawat=pesawat|penerbangan
+kereta=kereta api|kereta|sepur
+krl=krl
+bis=bis|bus
+travel=travel
+
+[Slogan]
+atta=assyiap|assiap|uh she up|uhh she up
+
+[TandaTanya]
+tandatanya=\?
+
+[Tanya]
+siapa=siapa|syapa|sapa|sape|siapakah|sopo
+apa=apa|apakah|pa|what|mana
+mengapa=mengapa|ngapa|napa|kenapa|knp|why
+berapa=berapa|berape|brp|brapa|piro|berapakah|berpa
+bagaimana=bagaimana|gimana|gmn|bgmn|bgm|gmana|pripun|piye
+bisa=bisakah|bisa|boleh|bolehkan|bolehkan
+mau=mau|bersedia
+ngapain=ngapain
+kapan=kapan|kpn
+arti=artinya|arti|maksud|maksudnya|kamus|pengertian|definisi
+dimana=di mana|dimana|mana
+darimana=dari mana|darimana
+lokasi=di mana|dimana|mana
+beda=perbedaan|bedanya|beda
+apakah=apakah
+
+[Memperkenalkan]
+kenalkan=kenalkan|kenalin|perkenalkan
+
+[Verb]
+dari=dari
+jadi=jadi|sebagai|sbg
+sebagai=sebagai|sbg
+
+[KitabSuci]
+quran=quran|alquran|al quran|qur'an|alqur'an
+
+[Agama]
+islam=islam
+kristen=kristen|keristen
+katolik=katolik|katholik
+hindu=hindu
+budha=budha
+
+[Aksi]
+pukul=pukul|tonjok|tampol
+tampar=tampar
+
+[Perintah]
+bayar=bayar|bayari|bayarin|bayarkan
+check=cek|check|periksa
+cari=find|cariin|carikan|cari|nyari|temukan|nyariin|tampilin|tampilkan|dimana|di mana|dmana
+beli=buy|belikan|beli|blikan|beliin|pesankan|pesan|pesen|pesan|pesenin|pesanin|isi|isiin|isikan
+jual=sell|jual|jualin
+kirim=send|kirim|kirimkan
+buat=make|mbuat|buatkan|buat|buwat|buatin|membuat|bikin
+hitung=count|hitung|hitungkan|hitungin|itungin|count
+info=info|infoin|jelasin|jelaskan
+ambil=take|ambil|ambilkan
+pergi=pergi
+tambah=tambah|tambahkan
+jadi=jadikan|jadi
+hapus=delete|remove|erase|hapus|hapuskan
+tulis=tulis|catat
+terjemah=terjemah|terjemahin|terjemahkan
+atur=atur|set
+sapa=sapa
+nyala=nyala|nyalakan|hidupkan|aktifkan|aktivkan|turn on|on
+mati=mati|matikan|disable|turn off|off
+
+[KataKerja]
+bicara=bicara|ngomong|ngobrol|mengatakan|kata|mengucapkan|ucap|speak|speaking|speech|cakap
+
+[Perasaan]
+kangen=kangen|rindu
+benci=benci|jijay|ga suka|ga seneng
+sayang=mencintai|cintai|cinta|suka|sayang|seneng|demen|kesengsem|trisna|love|lov|luv
+
+[Respon]
+baik=baik|baek|baiklah|okay|okey|okeh|oke|okelah|ok|sip|sipp|siip|senang|seneng|yoi|terimakasih|terima kasih|terima ksh|makasih|trm|ksh|thx|thanks|silahkan|selow|woles|slow|iyah|iya|ya|yak|oiyah|tentu|thank|thx|cakep|- love you|love you|love u|mantab|mantap|mantep|mantul|matur nuwun|nuhun|bagus|good|cantik|joss|jos|iye
+buruk=mbuh|tauah|tauk|au ah|ga tau|ngga tau|entahlah|entah|gaje|gajelas|karepmu|auah|au ah|ga asik|gak asik|gak asyik|goblok|tolol|dongo|sombong|sontoloyo|asem|terserah|iyalah|semprul|kurang ajar|oneng
+maklum=maklumi|maklum
+gemblung=gemblung|gokil|bego|parah|gandeng|songong|setres|stres|stress|ngeyel|rese
+sabar=sabar|tenang|kalem|slow|kalm
+ya=ya|yaa|yes|yess|yesss|iye
+
+[Logika]
+ya=iyak|yak|yak|iyes|yes|yaa|ya|benar|bnar|betul|btul
+tidak=tidak|tdk|nggak|ngga|gak|ga|enggak|engga|ogah|salah|slah|bukan|no
+
+[CalendarCmd]
+buat=buat jadwal|buatin jadwal|buat agenda|buatin agenda|buat janjian|buatin janji|jadwalin|jadwalkan|janjian
+
+[CalendarRange]
+range=hari ini|nanti|besok|lusa|besok lusa|minggu ini|seminggu|bulan ini|sebulan|tahun ini|setahun
+
+[Waktu]
+jam=jam|pukul|time
+hari=hari|hr|day
+minggu=minggu
+bulan=bulan|bln|month
+tahun=tahun|thn|year
+tanggal=tanggal|tgl|date
+waktu=pagi|siang|sore|petang|malam|malem|mlm|morning|night|enjang|enjing
+range=hari ini|besok|lusa|minggu ini
+sekarang=sekarang|skrng
+nanti=nanti
+kemarin=kemarin|kemaren|kmrn
+
+
+[Kondisi]
+jika=jika|kalau|kalaw|kalo|klo|apabila|bila
+
+[Conjunction]
+waktu=sesudah|sementara|sebelum|ketika|sehabis|setelah|sehingga|sejak|selesai|tatkala|sambil|seraya|selagi|selama|sampai
+syarat=jika|jikalau|kalau|asal|bila|asalkan|manakala
+pengandaian=andaikan|seandainya|sekiranya|seumpamanya
+tujuan=agar|supaya|biar
+konsesif=biarpun|meskipun|walaupun|sekalipun|walau|sunguhpun|kendatipun
+pemiripan=seakan-akan|sebagaimana|seolah-olah|seperti|sebagai|bagaikan|laksana
+penyebab=sebab|oleh karena|karena
+pengakibatan=sehingga|sampai|sampai-sampai|maka|makanya|karenanya
+penjelasan=bahwa
+cara=dengan|melalui
+yang=yang|yg
+
+[RutinitasHarian]
+sarapan=sarapan|breakfast
+makan=makan|mangan|maem|mkan|makanan|food
+minum=minum|mnum|minuman|drink|ngopi|nyusu|ngeteh
+mandi=mandi|mndi|shower
+tidur=tidur|turu|bobo|ngorok|sleep
+kerja=kerja|gawe|work
+ibadah=ibadah|sholat|shalat|doa|shubuh|dhuhur|dzuhur|ashar|maghrib|magrib|isya
+sholat=sholat|shalat|salat|solat|doa|shubuh|dhuhur|dzuhur|ashar|maghrib|magrib|isya
+sholat_wajib=shubuh|dhuhur|dzuhur|ashar|maghrib|magrib|isya
+
+[RutinitasHarianDewasa]
+seks=seks|sexs|sex|ngentot|ngentod
+
+[Aktivitas]
+laku=lakukan|jalani|perbuat
+belajar=belajar|blajar
+
+[PersonalStatus]
+nikah=nikah|menikah|merid|married|meried
+single=jomblo|single|gadis|gds|lajang|perjaka|homo|jablai
+
+[Umur]
+umur=umur|usia
+umurmu=umurmu
+
+[JenisKelamin]
+laki=laki-laki|laki laki|laki|lanang|lelaki|cowok|cowo|cwo|mas
+perempuan=perempuan|gadis|ibu|cewek|cewe|cwe|mbak
+
+[PersonalKnowledge]
+tahu=kenal|tahu|tau|ngerti|ngertiin|paham
+ingat=ingat|inget
+
+[HargaLevel]
+mahal=paling mahal|termahal|mahal|mhal
+murah=paling murah|termurah|murah|mrah
+
+[Jam]
+angka=.*\d
+
+[Accounting]
+saldo=saldo|balance
+
+[Nominal]
+angka=.*\d
+nominal=.*\d
+range=kisaran|seharga|seputar|harga
+harga=harga|hrga
+
+[RangeNilai]
+minimal=minimal|min|mulai dari|mulai|terendah
+maksimal=maksimal|maximal|max|dibawah|di bawah|dibaah|kurang dari|kurang|tidak lebih dari|tdk lebih dr|tidak lebih|tdk lebih|tertinggi
+
+[Angka]
+angka=.*\d
+angkasatuan=satu|dua|tiga|empat|lima|enam|tujuh|delapan|sembilan|sepuluh|seratus|seribu|sejuta
+
+[Satuan]
+ribu=ribu|rb
+juta=juta|jt
+milyar=milyar|milyr|miliar
+
+[Kecantikan]
+baik=ngganteng|ganteng|cantik|keren|kereen|kereeen|hebat|powerful|top|pinter|pintar|cakep|keren|bagus|manis|gagah|luar biasa|jazakallahu|jazakallah|jazakumullahu|jazakumullah
+buruk=jelek|songong|gila|budeg|bodoh|galak|bohong|bau|bloon|bolot
+
+[Ekspresi]
+baik=haha|hehe|hihi|hoho|wkwk|muachhh|muatih
+kaget=eehh|ehh|wow|waduh|wadoh|duh|ha
+maaf=maaf|maap
+tertawa=hahaha|wkwk|wkwkwk|kwakwa|wakawa|wkwkkwwk|hehehe|heheh|hahahaha|hihihi
+
+[Keraguan]
+kok=kok|koq|lhoo|lho|lah|oya|ohya|masa sih|masa|maca cih|maca sih
+
+[Sifat]
+baik=baik|super|luar biasa|hebat|keren|kereen|kereen|cool|pintar|pinter|cerdas|pinterr|ganteng
+buruk=jahat|jahad|genit|bodoh|goblok|tolol|dongo|jelek|stupid|sombong|bohong|bloon|bolot|songong|jutek
+
+[NamaUmum]
+agus=agus
+alam=alam|alamsyah
+arif=arif|arief
+budi=budi|budhi
+edwin=edwin
+erwin=erwin
+joko=joko
+heri=heri|herry|hery
+heni=henny|henni|heni
+iwan=iwan
+irwan=irwan
+ivan=ivan
+
+[Figure]
+presiden=soekarno|soeharto|sby|jokowi|megawati|jkw
+Baznas=arifin
+Capres 2019=prabowo
+Cawapres 2019=sandi|sandiaga|maarif
+pahlawan=pattimura|diponegoro|kartini
+jagoan123=ansori|encang|ihdi|oka|abi|ines
+PHPDev=peter|bams|bambang|anne|deroh|ratu|yudi|joko|hafizh|ronald
+devpascal=indra|tigor|derit|kofa|maskofa
+Dev Pascal Terkaya=gustaman|@gust4m4n
+CafeStartup=temmy|gisela|gisel|bontot|wiwin
+KPBI=alda|irvanpani|irvan pani|syarif|naryo|sunaryo|fuji brainqu|rizqon|wagi
+Ulama=aa gym|uym|yusuf mansyur
+Tokoh Jaman Dulu=gajahmada|gajah mada
+SOG=bagusalfa|ainulhakim|alimhfdh
+DPO=wianggoro
+Ajaro=shinta|agasi|ruly|roni|yeri
+Fisika Undip 92=ennie|tanti|ayu|dyah
+Bot Terkenal=carik|carikbot
+Profesor=suryono
+
+[Bank]
+bca=bca
+bni=bni
+bri=bri
+btn=btn
+btpn=btpn
+mandiri=mandiri
+exim=exim
+
+[Kalendar]
+hari=hari|hr
+tanggal=tanggal|tgl
+bulan=bulan|bln
+namahari=senin|senen|selasa|slasa|rabu|rabo|rebo|kamis|sabtu|minggu
+namabulan=januari|februari|maret|april|mei|juni|juli|agustus|september|oktober|november|desember
+
+[Ukuran]
+jarak=jarak|km
+panjang=panjang
+waktu=lama|jam
+
+[Lokasi]
+rumah sakit=rumah sakit|rs|hospital|rsia|rsud
+klinik=klinik|clinic
+puskesmas=puskesmas
+apotek=apotek|toko obat|apotik
+tempat wisata=tempat wisata|wisata
+tempat nongkrong=tempat nongkrong|kongkow|tongkrongan
+tempat hiburan=tempat hiburan|hiburan
+atm=atm
+bank=bank
+istana=istana
+spbu=spbu|pom bensin
+restoran=restoran|resto|rumah makan|kios|tempat makan|cafe|restaurant|restauran
+lapangan=lapangan
+warteg=warteg
+warung=warung|warung makan
+bandara=bandara|lanud|lapangan udara|airport
+hotel=hotel|penginapan|losmen
+apartemen=apartemen|apartment|apartmen
+stasiun=stasiun|station
+terminal=terminal|terminal
+busway=busway
+toko=toko|kios|ruko|rukan
+pos=kantor pos
+polisi=kantor polisi|pos polisi|polisi|polsek
+taman=taman
+mall=mall|pertokoan
+menara=menara
+monumen=monumen
+pasar=pasar|market
+bioskop=bioskop|xxi|blitz
+candi=candi|pura|pure
+masjid=masjid|mesjid|mosque|mushola
+gereja=gereja|greja|katedral
+sekolah=sekolah|skolah|tk|sd|smp|smu|sma|smk|stm|ma|sman
+sdit=sdit
+kampus=kampus
+universitas=universitas|univ|stmik
+gelora=gelora|gelanggang olah raga|gor
+bengkel=bengkel
+kantor=kantor|perkantoran|gedung
+kos=kos|kost|tempat kos|tempat kost
+rumah=xrumah|rmah|gubug|gedung|home|house|graha|grha
+indomart=indomart|indomaret|indo mart
+alfamart=alfamart|alfamidi|alfa mart
+rekreasi=rekreasi
+penghulu=penghulu
+kua=kua
+perumahan=perumahan
+komplek=komplek
+panti asuhan=panti asuhan
+panti jompo=panti jompo
+panti=panti
+
+[Kuliner]
+bakso=bakso|baso
+mie=mie ayam|mie yamin|mie godok|mie
+nasi=nasi uduk|nasi goreng|nasi bakar
+rawon=rawon
+sambal=sambal setan|sambel setan|sambal|sambel
+sate=sate kambing|sate ayam|sate
+ayam=ayam
+bebek=bebek
+menthok=menthok|mentok|menthog|mentog
+grombyang=grombyang
+
+[Binatang]
+anjing=anjing
+ayam=ayam
+kucing=kucing
+macan=macan
+singa=singa
+
+[PerangkatListrik]
+lampu=lampu
+ac=ac
+kulkas=lemari es|kulkas
+
+[AreaName]
+provinsi=provinsi|prov|propinsi|profinsi
+kabupaten=kabupaten|kab
+kota=kota
+kecamatan=kecamatan
+desa=desa|kelurahan
+
+[Language]
+id=indonesia|endonesia|indonesian|indo|bahasa|melayu|Indonesisch
+en=english|enggres|inggris|enggris
+ar=arabic|arab
+nl=dutch|belanda|londo|holland
+it=italian|italia|italiano
+es=spanish|sepanyol|spanyol
+kn=kannada|kanada
+ko=korean|korea
+la=latin
+ms=malaysian|malaysia|malay
+de=germany|german|denmark
+pl=polish|polandia
+pt=Portuguese|portugis
+ru=russian|rusian|rusia|sovyet
+sr=serbian|serbia
+su=sundanese|sunda
+th=thailand|thai
+tl=tagalog|filipina|philipine|philippines|philippine
+tt=tatar
+tr=turkish|turki|turkey
+uz=uzbek
+fr=french|perancis|prancis
+hi=hindi|india
+hr=croatian|croatia
+jv=javanese|jawa|jowo
+jp=japanese|japan|jepang
+
+[TranslatorLanguage]
+id=id|indonesia|endonesa
+en=en|english|enggres|inggris
+jp=jp|japan|jepang
+ru=ru|rusia
+be=be
+
+[Application]
+bankjenius=bankjenius
+bankmandiri=bankmandiri
+bca=bca mobile|bca
+bluebird=mybluebird|my bluebird|bluebird
+bpjs=bpjs|bpjstku
+bukalapak=buka lapak|bukalapak
+calendar=calendar|tanggalan|kalender|kalendar
+camera=camera|kamera
+cinema21=cinema 21|cinema21
+chrome=chrome|browser|peramban
+contacts=contacts|contact|phone book|phonebook|ponbuk
+facebook=facebook|fesbuk|efbe|fb
+fbmessenger=fbmessenger|messenger
+instagram=instagram
+joox=joox
+photos=gallery|galeri|photos|photo|foto
+gmail=gmail|email|imel
+gojek=gojek|go jek|go-jek
+gocar=gocar|go car|go-car
+gofood=gofood|gofud|go food|go-food
+gopay=gopay|go pay
+gobills=gobills|gobill|go bill|go bills
+googlemaps=google maps|maps|map|peta
+grab=grab|grab car
+grabfood=grabfood|grabfud|grab food
+line=line
+linkedin=linkedin|linkedln
+message=sms|esemes|message
+myxl=myxl|my xl
+olx=olx|tokobagus|toko bagus
+ovo=ovo
+oyo=oyo
+photos=photos|gallery|foto
+shopee=shopee|shopie
+spotify=spotify|music|musik
+tcash=telkom cash|telkomsel cash|tcash
+telegram=telegram|tele
+telkomsel=telkomsel|my telkomsel
+tokopedia=toko pedia|tokopedia|tokped|toped
+translate=google translate|translate|kamus
+traveloka=traveloka
+trello=trello
+twitter=twitter|twiter
+uber=uber
+whatsapp=whatsapp|whatsapp|wa
+blibli.mobile.commerce=blibli|beli beli|bli bli
+com.bukalapak.mitra=bukalapak mitra|mitra bukalapak
+com.google.android.youtube=youtube|yutub|yutup
+com.Info_BMKG=bmkg|info bmkg
+com.lazada.android=lazada
+com.mataharimall.mmandroid=mataharimall|matahari mall
+com.mobile.legends=mobile legend|mobilelegend
+com.ruangguru.livestudents=ruangguru|ruang guru
+com.tencent.ig=pubg|pubg mobile
+com.zalora.android=zalora
+jd.cdyjy.overseas.market.indonesia=jd.id|jdid
+
+[Profesi]
+pembantu=pembantu
+karyawan=karyawan
+programmer=developer|programmer|tukang ketik
+prt=pembantu rumah tangga|prt|pembantu rmh tangga
+dokter=dokter|dok
+swasta=swasta
+pns=pegawai negeri|pgw negeri|pegawai negri|pgw negri
+pedagang=pedagang|penjual|pelapak|yang jual
+polisi=polisi
+tentara=tentara
+
+[MelakukanSesuatu]
+hubungi=menghubungi|hubungi|ngubungin|kontak
+belajar=belajar
+ngopi=ngopi
+
+[Perbuatan]
+ancam=pukul|gampar|gaplok|tendang|sikat
+
+[NamaSholat]
+dhuha=duha|dhuha
+rawatib=rawatib
+badiyyah=badiyah|badiyyah|ba'diyah|ba'diyyah
+tahajud=tahajud
+istikharah=istikharah|istikarah|istiqarah|istikhoroh|istiqoroh
+hajat=hajat|hajad
+
+[Sedang]
+sudah=sdh|sudah|sdah|udah|dah
+sedang=sedang|sdg|lagi|lg|lgi
+akan=akan|mau|mo
+ingin=menginginkan|ingin|mau
+belum=belum|blm
+
+[SuasanaHati]
+bosan=bosan|bosen
+sedih=sedih|galau
+senang=senang|bahagia|gembira|seneng
+
+[Hantu]
+hantu=hantu
+pocong=pocong
+
+[Tolong]
+tolong=tolong|tulung|tolongin
+help=help
+
+[AdVerb]
+saja=saja|aja|sahaja
+juga=juga|jg
+
+[BendaElektronik]
+telepon=telepon|telpon|telp
+handphone=handphone|henpon|hp
+
+[NoRespon]
+responthx=sama-sama|sama sama|sama|sama2|iyaa
+
+[Carik]
+admin=admin|lurah
+
+[Emoticon]
+bahagia=:)|:D|:p
+sedih=:(
+patahhati=💔|\ud83d\udc94
+manyun=😌|\ud83d\ude0c
+
+[TandaBaca]
+tanya=\?
+titik=.
+koma=,
+seru=\!
+
+[GroupMessage]
+welcome=welcome message|welcome|response|respon|member baru|new member
+
+
+[Word]
+jadwal=jadwal|jadual
+sholat=sholat|shalat|solat
+rosul=rosul|rasul|nabi
+sunnah=sunnah|sunah
+lokasi=lokasi|alamat
