@@ -46,6 +46,7 @@ $ git clone -b development https://github.com/luridarmawan/telegram-bot.git
 
 $ cd vendors
 $ git clone -b development https://github.com/fastplaz/fastplaz.git
+$ git clone -b development https://github.com/luridarmawan/SimpleAI.git
 
 ```
 
@@ -53,8 +54,10 @@ Anda boleh mengunakan cara lain untuk mendapatkan kode sumber ini, misalkan deng
 
 Kemudian _compile_ (tidak perlu install) paket ini:
 
-- tools/fastplaz_runtime.lpk
-- tools/fastplaz_integration.lpk
+- FastPlaz: tools/fastplaz_runtime.lpk
+- FastPlaz: tools/fastplaz_integration.lpk
+- SimpleAI: source/packages/simpleai_package.lpk
+- SimpleAI: source/packages/simplebot_package.lpk
 
 **Build Telegram Bot dari IDE**
 
