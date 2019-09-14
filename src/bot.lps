@@ -3,13 +3,13 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="19">
+    <Units Count="21">
       <Unit0>
         <Filename Value="bot.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="3" Y="7"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="31"/>
       </Unit0>
       <Unit1>
         <Filename Value="main.pas"/>
@@ -18,24 +18,24 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="158"/>
-        <CursorPos X="34" Y="168"/>
-        <UsageCount Value="29"/>
+        <TopLine Value="14"/>
+        <CursorPos X="24" Y="26"/>
+        <UsageCount Value="31"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/config_lib.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="135"/>
-        <CursorPos X="5" Y="157"/>
+        <TopLine Value="75"/>
+        <CursorPos Y="86"/>
         <UsageCount Value="10"/>
       </Unit2>
       <Unit3>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/telegram_integration.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="152"/>
-        <CursorPos Y="160"/>
+        <TopLine Value="705"/>
+        <CursorPos Y="714"/>
         <UsageCount Value="13"/>
       </Unit3>
       <Unit4>
@@ -48,15 +48,15 @@
       <Unit5>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/logutil_lib.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="58"/>
-        <CursorPos X="50" Y="63"/>
+        <TopLine Value="96"/>
+        <CursorPos Y="108"/>
         <UsageCount Value="10"/>
       </Unit5>
       <Unit6>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/common.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="187"/>
-        <CursorPos X="10" Y="197"/>
+        <TopLine Value="198"/>
+        <CursorPos Y="208"/>
         <UsageCount Value="11"/>
       </Unit6>
       <Unit7>
@@ -107,22 +107,21 @@
       <Unit13>
         <Filename Value="../../../../SimpleAI/source/SimpleAI/source/package/src/simplebot_controller.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="133"/>
-        <CursorPos X="23" Y="138"/>
+        <CursorPos X="24" Y="10"/>
         <UsageCount Value="10"/>
       </Unit13>
       <Unit14>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/systems/fastplaz_handler.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="316"/>
-        <CursorPos X="20" Y="335"/>
+        <TopLine Value="13"/>
+        <CursorPos X="69" Y="30"/>
         <UsageCount Value="10"/>
       </Unit14>
       <Unit15>
         <Filename Value="../../../../SimpleAI/source/SimpleAI/source/package/src/simpleai_controller.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="192"/>
-        <CursorPos X="15" Y="213"/>
+        <TopLine Value="710"/>
+        <CursorPos Y="721"/>
         <UsageCount Value="10"/>
       </Unit15>
       <Unit16>
@@ -135,8 +134,8 @@
       <Unit17>
         <Filename Value="../../../../SimpleAI/source/SimpleAI/source/package/src/intents_lib.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="14"/>
-        <CursorPos X="20" Y="14"/>
+        <TopLine Value="285"/>
+        <CursorPos X="20" Y="301"/>
         <UsageCount Value="10"/>
       </Unit17>
       <Unit18>
@@ -146,16 +145,104 @@
         <CursorPos X="28" Y="129"/>
         <UsageCount Value="10"/>
       </Unit18>
+      <Unit19>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/objpas/sysutils/sysstrh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="106"/>
+        <CursorPos X="10" Y="120"/>
+        <UsageCount Value="10"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="../../../../SimpleAI/source/SimpleAI/source/package/src/controller/movie_controller.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="49"/>
+        <UsageCount Value="10"/>
+      </Unit20>
     </Units>
-    <JumpHistory Count="2" HistoryIndex="1">
+    <JumpHistory Count="21" HistoryIndex="20">
       <Position1>
         <Filename Value="main.pas"/>
-        <Caret Line="156" Column="3" TopLine="88"/>
+        <Caret Line="135" TopLine="132"/>
       </Position1>
       <Position2>
         <Filename Value="main.pas"/>
-        <Caret Line="158" Column="21" TopLine="158"/>
+        <Caret Line="99" Column="17" TopLine="98"/>
       </Position2>
+      <Position3>
+        <Filename Value="main.pas"/>
+        <Caret Line="228" TopLine="224"/>
+      </Position3>
+      <Position4>
+        <Filename Value="main.pas"/>
+      </Position4>
+      <Position5>
+        <Filename Value="main.pas"/>
+        <Caret Line="119" Column="7" TopLine="103"/>
+      </Position5>
+      <Position6>
+        <Filename Value="main.pas"/>
+        <Caret Line="123" Column="7" TopLine="107"/>
+      </Position6>
+      <Position7>
+        <Filename Value="main.pas"/>
+        <Caret Line="124" Column="7" TopLine="108"/>
+      </Position7>
+      <Position8>
+        <Filename Value="main.pas"/>
+        <Caret Line="140" Column="9" TopLine="123"/>
+      </Position8>
+      <Position9>
+        <Filename Value="main.pas"/>
+        <Caret Line="150" Column="9" TopLine="133"/>
+      </Position9>
+      <Position10>
+        <Filename Value="main.pas"/>
+        <Caret Line="163" TopLine="153"/>
+      </Position10>
+      <Position11>
+        <Filename Value="main.pas"/>
+        <Caret Line="59" TopLine="50"/>
+      </Position11>
+      <Position12>
+        <Filename Value="main.pas"/>
+        <Caret Line="58" TopLine="49"/>
+      </Position12>
+      <Position13>
+        <Filename Value="main.pas"/>
+        <Caret Line="109" Column="7" TopLine="100"/>
+      </Position13>
+      <Position14>
+        <Filename Value="main.pas"/>
+        <Caret Line="111" Column="45" TopLine="100"/>
+      </Position14>
+      <Position15>
+        <Filename Value="main.pas"/>
+        <Caret Line="20" TopLine="4"/>
+      </Position15>
+      <Position16>
+        <Filename Value="main.pas"/>
+        <Caret Line="69" Column="27" TopLine="61"/>
+      </Position16>
+      <Position17>
+        <Filename Value="main.pas"/>
+        <Caret Line="206" TopLine="186"/>
+      </Position17>
+      <Position18>
+        <Filename Value="main.pas"/>
+        <Caret Line="213" TopLine="193"/>
+      </Position18>
+      <Position19>
+        <Filename Value="main.pas"/>
+        <Caret Line="32" Column="3" TopLine="21"/>
+      </Position19>
+      <Position20>
+        <Filename Value="main.pas"/>
+        <Caret Line="215" Column="10" TopLine="205"/>
+      </Position20>
+      <Position21>
+        <Filename Value="main.pas"/>
+        <Caret Line="21" Column="31" TopLine="9"/>
+      </Position21>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

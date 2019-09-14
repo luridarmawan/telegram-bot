@@ -7,8 +7,8 @@ object fMain: TfMain
   ClientHeight = 345
   ClientWidth = 611
   KeyPreview = True
-  OnClose = FormClose
   OnCreate = FormCreate
+  OnDestroy = FormDestroy
   OnKeyDown = FormKeyDown
   OnShow = FormShow
   Position = poDesktopCenter

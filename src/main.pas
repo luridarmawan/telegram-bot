@@ -5,6 +5,7 @@
   file that was distributed with this source code.
 }
 unit main;
+
 {
   This project is an Example of a Simple Telegram Bot,
   using the Poll method.
@@ -16,13 +17,19 @@ unit main;
 interface
 
 uses
-  simplebot_controller, fastplaz_handler,
+  fastplaz_handler,
+  simpleai_controller, fpjson,
   telegram_integration, config_lib, Classes, SysUtils, Forms, Controls,
   Graphics, Dialogs, StdCtrls, ExtCtrls, ComCtrls, Buttons, Spin, string_helpers;
 
 const
-  _DEVELOPMENT_ = true;
+  _DEVELOPMENT_ = false;
   TELEGRAM_TOKEN = 'telegram/default/token';
+  CONFIG_BOTNAME = 'ai/default/name';
+  CONFIG_BASEDIR = 'ai/default/basedir';
+  CONFIG_ENTITIES = 'ai/default/entities';
+  CONFIG_INTENTS = 'ai/default/intents';
+  CONFIG_RESPONSE = 'ai/default/response';
 
 type
 
@@ -52,17 +59,18 @@ type
     procedure btnSendMessageClick(Sender: TObject);
     procedure btnStartClick(Sender: TObject);
     procedure edtTelegramIDEnter(Sender: TObject);
-    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
     procedure FormKeyDown(Sender: TObject; var Key: word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure tmrPollTimer(Sender: TObject);
   private
-    //Config: TMyConfig;
+    baseDir: string;
     Telegram: TTelegramIntegration;
     inProcess: boolean;
-    NLP: TSimpleBotModule;
+    NLP: TSimpleAI;
 
+    procedure loadNLPData;
     procedure onMessageHandler(AMessage: string; var AReply: string;
       var AHandled: boolean);
   public
@@ -89,8 +97,8 @@ end;
 
 procedure TfMain.FormCreate(Sender: TObject);
 begin
-  Config := TMyConfig.Create(nil);
-  Config.ValidateFile('config.json');
+  baseDir := '';
+  Config.ValidateFile(baseDir + 'config.json');
 
   // Prepare Telegram Bot
   Telegram := TTelegramIntegration.Create;
@@ -99,9 +107,11 @@ begin
 
   // NLP Engine
   // NLP data at folder 'files/nlp/*'
-  NLP := TSimpleBotModule.Create;
+  NLP := TSimpleAI.Create;
   NLP.TrimMessage := False;
-  NLP.CLI := True;
+  NLP.AIName := Config[CONFIG_BOTNAME];
+  NLP.Debug := False;
+  loadNLPData;
 
   inProcess := False;
   mem.Align := alClient;
@@ -114,12 +124,10 @@ begin
   memResult.Font.Size := 11;
 end;
 
-procedure TfMain.FormClose(Sender: TObject; var CloseAction: TCloseAction);
+procedure TfMain.FormDestroy(Sender: TObject);
 begin
   NLP.Free;
   Telegram.Free;
-  Config.Free;
-  CloseAction := caFree;
 end;
 
 procedure TfMain.btnStartClick(Sender: TObject);
@@ -174,7 +182,8 @@ end;
 
 procedure TfMain.FormKeyDown(Sender: TObject; var Key: word; Shift: TShiftState);
 begin
-  if not _DEVELOPMENT_ then Exit;
+  if not _DEVELOPMENT_ then
+    Exit;
   if key = 27 then
   begin
     key := 0;
@@ -192,6 +201,46 @@ begin
   Telegram.getUpdatesDynamic();
 end;
 
+procedure TfMain.loadNLPData;
+var
+  i: integer;
+  s, nlpDir: String;
+  jData: TJSONData;
+begin
+  nlpDir := baseDir + Config[CONFIG_BASEDIR];
+
+  // load Entities
+  s := Config[CONFIG_ENTITIES];
+  jData := GetJSON(s);
+  if jData.Count > 0 then
+    for i := 0 to jData.Count - 1 do
+    begin
+      NLP.AddEntitiesFromFile(nlpDir + jData.Items[i].AsString);
+    end;
+  jData.Free;
+
+  // load Intents
+  s := Config[CONFIG_INTENTS];
+  jData := GetJSON(s);
+  if jData.Count > 0 then
+    for i := 0 to jData.Count - 1 do
+    begin
+      NLP.AddIntentFromFile(nlpDir + jData.Items[i].AsString);
+    end;
+  jData.Free;
+
+  // load Response
+  s := Config[CONFIG_RESPONSE];
+  jData := GetJSON(s);
+  if jData.Count > 0 then
+    for i := 0 to jData.Count - 1 do
+    begin
+      NLP.AddResponFromFile(nlpDir + jData.Items[i].AsString);
+    end;
+  jData.Free;
+
+end;
+
 procedure TfMain.onMessageHandler(AMessage: string; var AReply: string;
   var AHandled: boolean);
 var
@@ -202,14 +251,19 @@ begin
   //  AReply := 'hi juga';
 
   // Process Your Message here
-  s := NLP.Exec(AMessage);
-  AReply := NLP.ResponseText.Text.Trim;
-  AHandled := True; // set true to send reply to sender
+  if NLP.Exec(AMessage) then
+  begin
+    AReply := NLP.ResponseText.Text.Trim;
+    AHandled := True;
+  end;
 
   memResult.Lines.Add(Telegram.RequestContent);
   s := FormatDateTime('yyyy/mm/dd HH:nn:ss', Now) + ' | '
-    + Telegram.UserID + ':'
-    + Telegram.FullName + ' | ' + AMessage + ' » ' + AReply;
+    + Telegram.UserID
+    + ':' + Telegram.FullName
+    + ' | ' + AMessage + ' » '
+    + AReply;
+
   mem.Lines.Add(s);
 
 end;
