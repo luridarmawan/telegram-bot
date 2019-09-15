@@ -7,16 +7,6 @@
   },
   "telegram": {
     "default": {
-      "token": "457500784:AAEboLP3PcyBa88SqHqVFx336k9b7rURcOk"
-    }
-  },
-  "line": {
-    "default": {
-      "token": ""
-    }
-  },
-  "facebook": {
-    "default": {
       "token": ""
     }
   },
