@@ -1,5 +1,6 @@
 <?php
 /**
+ * editor: AksiIDE, https://aksiide.com
  * File: index.php 
  * API Example for Simple Telegram BOT with Carik NLP Engine
  * see NLP file 
@@ -11,7 +12,6 @@
  * @package CarikBot
  * @subpackage apitools
  * @copyright Copyright (c) 2013-endless AksiIDE
- * @editor AksiIDE, https://aksiide.com
  * @link https://carik.id
  */
 
