@@ -10,6 +10,16 @@
       "token": ""
     }
   },
+  "line": {
+    "default": {
+      "token": ""
+    }
+  },
+  "facebook": {
+    "default": {
+      "token": ""
+    }
+  },
   "ai": {
     "default": {
       "name": "YourBotName",
@@ -27,9 +37,11 @@
         "main-entities.txt"
       ],
       "intents": [
+        "others-intents.txt",
         "main-intents.txt"
       ],
       "response": [
+        "others-response.txt",
         "main-response.txt"
       ]
     }

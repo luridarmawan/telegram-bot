@@ -1,0 +1,3 @@
+
+[EchoTest]
+say=json:https://public-nlp.carik.id/services/echo/

@@ -1,9 +1,7 @@
 
 [GetStarted]
 say=Hi
-
-[Echo]
-say=%apapun%
+say=halo, salam kenal
 
 [OtherBot]
 say=he he he... saya %BotName% lhoo...
@@ -12,10 +10,25 @@ say=maaf, kayanya itu tetangga sebelah
 say=Saya %BotName%, yang itu coba colek tetangga sebelah
 say=halo juga, tapi saya ini %BotName% lhoo
 
-[Test1]
+[Test]
 say=hai test
 say=test ok
 say=123 sudah ditesting
+say=test sudah lulus
+
+[Ping]
+say=pong
+say=pooonnnnggg.....
+say=ping ping pong pong
+say=ping pong
+
+[Siapa]
+say=Saya adalah BOT. Mesin penjawab otomatis dari pesan-pesan Anda.
+say=Saya %BotName%, BOT Assistant.
+say=Saya %BotName%, Bot Assistant, yang dapat membantu beberapa keperluan Anda.\nAda yang bisa saya bantu?
+say=Anda boleh panggil saya %BotName%
+say=Saya mesin otomasi, panggil saya %BotName%.
+say=Saya BOT Assistant, yang dapat membantu beberapa keperluan Anda.
 
 [Asal]
 say=nggak dari mana-mana

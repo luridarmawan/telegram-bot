@@ -10,6 +10,7 @@ Pengoperasiannya sederhana, cukup menjalankan aplikasinya di laptop/pc saja, sel
 
 Di telegram-bot ini **sudah** disediakan [**NLP**](https://medium.com/@luridarmawan/natural-language-processing-nlp-sederhana-dari-carik-bot-78952b618695) untuk handle pesan yang masuk, sama seperti yang digunakan oleh [**CarikBot**](https://carik.id).
 
+[![Telegram Bot Video](assets/video.png)](https://youtu.be/SgcHuqY9dSM "Telegram Bot Video")
 
 ## Why use it?
 
@@ -79,7 +80,7 @@ Konfigurasi menggunakan telegram bot ini sangat sederhana, cukup buka file `bin/
 }
 ```
 
-Bagaimana cara mendapatkan bisa anda dapatkan informasinya melalui media online yang tersedia. Mudah kok.
+Token bisa anda dapatkan melalui chat ke [BotFather](https://telegram.me/botfather) yang sudah disediakan oleh Telegram.
 
 Jika kompilasi berjalan baik dan konfigurasi telah benar, coba jalankan aplikasi telegram bot tadi.
 Kira-kira tampilannya akan seperti ini.
@@ -88,10 +89,22 @@ Kira-kira tampilannya akan seperti ini.
 
 Jika tombol start diaktifkan, Bot akan secara periodik mengambil data pesan dari server telegram, dan mengirimkan pesan balik berupa **echo** dari pesan yang dikirim sebelumnya.
 
+**NLP (Natural Language Processing)**
+
+Bot ini menggunakan NLP yang disediakan oleh [Carik Bot](https://carik.id?ref=github). Konfigurasi konteks bisa dilakukan melalui file yang tersedia di folder `files/nlp/`. Informasi tentang NLP bisa dibaca melalui situs [Medium Luri Darmawan](https://medium.com/@luridarmawan/natural-language-processing-nlp-sederhana-dari-carik-bot-78952b618695).
+
 **Telegram Bot Installation**
 
 Tidak ada instalasi secara khusus dari aplikasi ini. Selama jaringan internet tersedia, Anda bisa menjalankan aplikasi ini di laptop/pc anda.
 
+**Executable File**
+
+Kami menyediakan file binary di halaman [Release](https://github.com/luridarmawan/telegram-bot/releases) untuk anda yang tidak mau direportkan dengan proses kompilasi . Tersedia untuk:
+
+- [Linux 64 bit](https://github.com/luridarmawan/telegram-bot/releases/download/0.0.0/TelegramBot-binary-linux64.zip)
+- [Windows 64 bit](https://github.com/luridarmawan/telegram-bot/releases/download/0.0.0/TelegramBot-binary-win64.zip)
+
+Silakan download dan dijalankan.
 
 
 ## USAGE

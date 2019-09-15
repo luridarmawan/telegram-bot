@@ -4,16 +4,11 @@ action=example
 say=@Example
 
 [GetStarted]
+say=/start
 say=get started
 
 [OneCharacterOnly]
 say=^[a-z]$
-
-[Echo]
-say=echo @apapun
-say=(ucapkan|ucapin) @apapun buat @other
-say=(ucapkan|ucapin) @apapun dong
-say=(ucapkan|ucapin) @apapun
 
 [OtherBot]
 say=@Greeting @OtherBot
@@ -22,11 +17,19 @@ say=^@OtherBot
 say=(semacam|macam|mirip) @OtherBot
 
 [Test]
+say=^test
 say=^test123
 say=^testing 123
 say=^testing
 say=^test 123
 say=^ting ting ting
+
+[Ping]
+say=ping
+
+[Siapa]
+say=@Sapaan:kamu (siapa|syapa)
+say=(siapa|syapa) @Sapaan:kamu
 
 [Asal]
 say=@Sapaan:kamu (datang|berasal|asal) (dari|dr) mana

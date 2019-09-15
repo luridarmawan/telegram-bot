@@ -119,9 +119,9 @@ begin
   mainPageControl.ActivePage := TabSheet1;
 
   mem.Font.Name := 'Courier';
-  mem.Font.Size := 11;
+  mem.Font.Size := 10;
   memResult.Font.Name := 'Courier';
-  memResult.Font.Size := 11;
+  memResult.Font.Size := 10;
 end;
 
 procedure TfMain.FormDestroy(Sender: TObject);
@@ -258,7 +258,7 @@ begin
   end;
 
   memResult.Lines.Add(Telegram.RequestContent);
-  s := FormatDateTime('yyyy/mm/dd HH:nn:ss', Now) + ' | '
+  s := FormatDateTime('mm/dd HH:nn:ss', Now) + ' | '
     + Telegram.UserID
     + ':' + Telegram.FullName
     + ' | ' + AMessage + ' » '
