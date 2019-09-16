@@ -129,6 +129,10 @@ Dari IDE/Editor favorit anda, buka file project `bot.lpi`, nama berkas `main.pas
 
 Jika pesan akan diabaikan dan tidak mengirimkan perlu balasan, cukup langsung `Exit` saja atau dengan memberikan nilai `False` ke variable `AHandled`.
 
+Di dalam source juga sudah disertakan contoh penggunaan bersama [NLP](https://medium.com/@luridarmawan/natural-language-processing-nlp-sederhana-dari-carik-bot-78952b618695) dengan engine (lite) dari [Carik](https://carik.id).
+
+![Telegram Bot Custom Message](assets/code-nlp.png "Message Handler with NLP")
+
 ### Catatan
 
 Aplikasi ini adalah contoh membuat bot telegram yang sederhana, tersedia NLP sederhana pula, namun bukan untuk kebutuhan trafik yang tinggi.
