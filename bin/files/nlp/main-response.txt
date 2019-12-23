@@ -1,0 +1,95 @@
+
+[GetStarted]
+say=Hi
+say=halo, salam kenal
+
+[OtherBot]
+say=he he he... saya %BotName% lhoo...
+say=eheemm... kayanya salah orang deh
+say=maaf, kayanya itu tetangga sebelah
+say=Saya %BotName%, yang itu coba colek tetangga sebelah
+say=halo juga, tapi saya ini %BotName% lhoo
+
+[Test]
+say=hai test
+say=test ok
+say=123 sudah ditesting
+say=test sudah lulus
+
+[Ping]
+say=pong
+say=pooonnnnggg.....
+say=ping ping pong pong
+say=ping pong
+
+[Siapa]
+say=Saya adalah BOT. Mesin penjawab otomatis dari pesan-pesan Anda.
+say=Saya %BotName%, BOT Assistant.
+say=Saya %BotName%, Bot Assistant, yang dapat membantu beberapa keperluan Anda.\nAda yang bisa saya bantu?
+say=Anda boleh panggil saya %BotName%
+say=Saya mesin otomasi, panggil saya %BotName%.
+say=Saya BOT Assistant, yang dapat membantu beberapa keperluan Anda.
+
+[Asal]
+say=nggak dari mana-mana
+say=kenapa?
+say=dari tadi di sini
+say=mau tau aja
+say=lagi kepo ya?
+
+[CarikSalam]
+say=yaaa...
+say=yaa... bagaimana ?
+say=Carik di sini
+say=ada apa yaa?
+
+[SalamMuslim]
+say=Wa'alaikumsalam
+say=Wa'alaikumsalam wr wb
+say=Wa'alaikumsalam Warahmatullahi Wabarakatuh
+say=وَعَلَيْكُمْ السَّلاَمُ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ
+say=Wa'alaykumussalam
+say=Wa'alaykumussalam wr wb
+say=Wa'alaykumussalam Warahmatullahi Wabarakatuh
+
+[SalamSunda]
+say=mangga ...
+say=dihampura
+say=wilujeng oge
+
+[GreetingSayang]
+say=hihihihih... yaaa ....?
+say=eheemm...
+say=yaa beb ...
+say=😍 😍 😍
+say=yaa say ...
+say=❤ ❤ ❤
+
+[Greeting]
+say=Hi, selamat %time_session% ...
+say=Halo, selamat %time_session% ...
+say=Hi juga
+say=Hai juga. Bagaimana kabar?
+say=Selamat %time_session% ...
+say=ya, %time_session% ...
+
+[Waktu]
+say=%time%.\n_bukannya bisa cek dari hape kamu?_
+say=%time%.\nnggak lagi lupa waktu khan?
+say=%time%.\nsama nggak dengan jam di hape kamu?
+say=%time%.\nklo ga salah
+say=%time%.\nmau ada janjian?
+say=%time%.\ncoba cek juga kalendar di hape kamu
+
+[Kabar]
+say=Saya baik-baik saja
+say=Semangat sekali hari ini ✊💪
+say=sehat 💪
+say=Kabar baik di sini
+
+[WordCencor]
+say=Mungkin bisa digunakan alternatif kalimat yang lain.
+say=Maaf, sepertinya akan lebih baik jika menggunakan kata-kata yg lebih sopan
+say=bisa gunakan kata-kata yg lebih baik
+say=Maaf jika pada kondisi tertentu, sepertinya saya tidak merespon Anda.
+say=Sayang sekali, mungkin bisa gunakan kata-kata yg lebih baik

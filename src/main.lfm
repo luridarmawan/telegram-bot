@@ -7,8 +7,8 @@ object fMain: TfMain
   ClientHeight = 345
   ClientWidth = 611
   KeyPreview = True
-  OnClose = FormClose
   OnCreate = FormCreate
+  OnDestroy = FormDestroy
   OnKeyDown = FormKeyDown
   OnShow = FormShow
   Position = poDesktopCenter
@@ -131,14 +131,14 @@ object fMain: TfMain
     Height = 224
     Top = 40
     Width = 611
-    ActivePage = TabSheet2
+    ActivePage = TabSheet1
     Align = alClient
-    TabIndex = 1
+    TabIndex = 0
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = 'Log'
       ClientHeight = 194
-      ClientWidth = 761
+      ClientWidth = 605
       object mem: TMemo
         Left = 30
         Height = 168
@@ -146,7 +146,7 @@ object fMain: TfMain
         Width = 428
         Font.CharSet = ANSI_CHARSET
         Font.Height = 11
-        Font.Name = 'Courier New'
+        Font.Name = 'Courier'
         Lines.Strings = (        )
         ParentFont = False
         ReadOnly = True
@@ -164,7 +164,7 @@ object fMain: TfMain
         Width = 375
         Font.CharSet = ANSI_CHARSET
         Font.Height = 11
-        Font.Name = 'Courier New'
+        Font.Name = 'Courier'
         Lines.Strings = (        )
         ParentFont = False
         ReadOnly = True

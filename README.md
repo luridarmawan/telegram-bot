@@ -8,8 +8,9 @@
 
 Pengoperasiannya sederhana, cukup menjalankan aplikasinya di laptop/pc saja, selama jaringan internet telah terhubung.
 
-Di telegram-bot ini belum disediakan [NLP](https://medium.com/@luridarmawan/natural-language-processing-nlp-sederhana-dari-carik-bot-78952b618695) untuk handle pesan yang masuk. Jika ingin menyematkan [NLP](https://medium.com/@luridarmawan/natural-language-processing-nlp-sederhana-dari-carik-bot-78952b618695), coba baca bagian bawah README ini.
+Di telegram-bot ini **sudah** disediakan [**NLP**](https://medium.com/@luridarmawan/natural-language-processing-nlp-sederhana-dari-carik-bot-78952b618695) untuk handle pesan yang masuk, sama seperti yang digunakan oleh [**CarikBot**](https://carik.id).
 
+[![Telegram Bot Video](assets/video.png)](https://youtu.be/SgcHuqY9dSM "Telegram Bot Video")
 
 ## Why use it?
 
@@ -46,6 +47,7 @@ $ git clone -b development https://github.com/luridarmawan/telegram-bot.git
 
 $ cd vendors
 $ git clone -b development https://github.com/fastplaz/fastplaz.git
+$ git clone -b development https://github.com/luridarmawan/SimpleAI.git
 
 ```
 
@@ -53,8 +55,10 @@ Anda boleh mengunakan cara lain untuk mendapatkan kode sumber ini, misalkan deng
 
 Kemudian _compile_ (tidak perlu install) paket ini:
 
-- tools/fastplaz_runtime.lpk
-- tools/fastplaz_integration.lpk
+- FastPlaz: tools/fastplaz_runtime.lpk
+- FastPlaz: tools/fastplaz_integration.lpk
+- SimpleAI: source/packages/simpleai_package.lpk
+- SimpleAI: source/packages/simplebot_package.lpk
 
 **Build Telegram Bot dari IDE**
 
@@ -76,7 +80,7 @@ Konfigurasi menggunakan telegram bot ini sangat sederhana, cukup buka file `bin/
 }
 ```
 
-Bagaimana cara mendapatkan bisa anda dapatkan informasinya melalui media online yang tersedia. Mudah kok.
+Token bisa anda dapatkan melalui chat ke [BotFather](https://telegram.me/botfather) yang sudah disediakan oleh Telegram.
 
 Jika kompilasi berjalan baik dan konfigurasi telah benar, coba jalankan aplikasi telegram bot tadi.
 Kira-kira tampilannya akan seperti ini.
@@ -85,10 +89,22 @@ Kira-kira tampilannya akan seperti ini.
 
 Jika tombol start diaktifkan, Bot akan secara periodik mengambil data pesan dari server telegram, dan mengirimkan pesan balik berupa **echo** dari pesan yang dikirim sebelumnya.
 
+**NLP (Natural Language Processing)**
+
+Bot ini menggunakan NLP yang disediakan oleh [Carik Bot](https://carik.id?ref=github). Konfigurasi konteks bisa dilakukan melalui file yang tersedia di folder `files/nlp/`. Informasi tentang NLP bisa dibaca melalui situs [Medium Luri Darmawan](https://medium.com/@luridarmawan/natural-language-processing-nlp-sederhana-dari-carik-bot-78952b618695).
+
 **Telegram Bot Installation**
 
 Tidak ada instalasi secara khusus dari aplikasi ini. Selama jaringan internet tersedia, Anda bisa menjalankan aplikasi ini di laptop/pc anda.
 
+**Executable File**
+
+Kami menyediakan file binary di halaman [Release](https://github.com/luridarmawan/telegram-bot/releases) untuk anda yang tidak mau direportkan dengan proses kompilasi . Tersedia untuk:
+
+- [Linux 64 bit](https://github.com/luridarmawan/telegram-bot/releases/download/0.0.0/TelegramBot-binary-linux64.zip)
+- [Windows 64 bit](https://github.com/luridarmawan/telegram-bot/releases/download/0.0.0/TelegramBot-binary-win64.zip)
+
+Silakan download dan dijalankan.
 
 
 ## USAGE
@@ -113,9 +129,13 @@ Dari IDE/Editor favorit anda, buka file project `bot.lpi`, nama berkas `main.pas
 
 Jika pesan akan diabaikan dan tidak mengirimkan perlu balasan, cukup langsung `Exit` saja atau dengan memberikan nilai `False` ke variable `AHandled`.
 
+Di dalam source juga sudah disertakan contoh penggunaan bersama [NLP](https://medium.com/@luridarmawan/natural-language-processing-nlp-sederhana-dari-carik-bot-78952b618695) dengan engine (lite) dari [Carik](https://carik.id).
+
+![Telegram Bot Custom Message](assets/code-nlp.png "Message Handler with NLP")
+
 ### Catatan
 
-Aplikasi ini adalah contoh membuat bot telegram yang sederhana, belum ada NLP-nya dan bukan untuk kebutuhan trafik yang tinggi.
+Aplikasi ini adalah contoh membuat bot telegram yang sederhana, tersedia NLP sederhana pula, namun bukan untuk kebutuhan trafik yang tinggi.
 
 Untuk penggunaan dengan trafik yang tinggi, saya menyarankan untuk menggunakan telegram bot yang memanfaatkan method webhook.
  

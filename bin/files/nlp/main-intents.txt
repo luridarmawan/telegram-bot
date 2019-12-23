@@ -1,0 +1,116 @@
+
+[ExamplePattern]
+action=example
+say=@Example
+
+[GetStarted]
+say=/start
+say=get started
+
+[OneCharacterOnly]
+say=^[a-z]$
+
+[OtherBot]
+say=@Greeting @OtherBot
+say=(oke|ok) @OtherBot
+say=^@OtherBot
+say=(semacam|macam|mirip) @OtherBot
+
+[Test]
+say=^test
+say=^test123
+say=^testing 123
+say=^testing
+say=^test 123
+say=^ting ting ting
+
+[Ping]
+say=ping
+
+[Siapa]
+say=@Sapaan:kamu (siapa|syapa)
+say=(siapa|syapa) @Sapaan:kamu
+
+[Asal]
+say=@Sapaan:kamu (datang|berasal|asal) (dari|dr) mana
+say=@Sapaan:kamu (dari|dr) mana
+say=carik (dari|dr) mana
+say=(darimana|dari mana|dr mana) @Sapaan:kamu
+say=asalmu
+say=^orang mana
+
+[CarikSalam]
+say=^(carik|rik)
+say=^(halo|hai|hi|oke|ok) (carik|rik|cari)
+
+[SalamMuslim]
+say=@SalamMuslim
+say=@SalamArabic
+
+[SalamSunda]
+say=^punten
+say=^(sampurasun|samporasun)
+say=^wilujeng
+
+[GreetingSayang]
+say=^@Greeting:hi @Sapaan:sayang
+say=@Waktu:waktu @Sapaan:sayang
+say=@Sapaan:sayang
+
+[GreetingReply]
+say=@Greeting:salam (juga|jg)
+
+[Greeting]
+say=@Greeting apa kabar
+say=^@Greeting
+say=selamat @Waktu
+say=sugeng @Waktu
+say=good (day|night)
+say=apakabar
+say=@Waktu:waktu
+say=how are you
+
+[Math]
+action=math
+object=berhitung
+boundary=false
+say=@Tanya:berapa (jml|jumlah) @Formula
+say=@Tanya:berapa @Formula
+say=@Perintah:hitung @Formula
+
+[MathGeneral]
+context=berhitung
+boundary=false
+say=^(berhitung|hitung)
+
+[Waktu]
+say=^jam
+say=@Tanya @Waktu
+say=@range @Waktu:-waktu @Tanya:berapa
+say=@range @Waktu:-waktu @Tanya:apa
+say=^@Waktu:-waktu @Tanya:berapa
+say=@Waktu:-waktu @Tanya:apa
+say=^@Waktu:-waktu
+
+[Kabar]
+say=@Tanya:bagaimana kabar@Sapaan:kamu
+say=@Tanya:bagaimana (kabar|kbr|kabarmu|kabarnya)
+say=@Tanya:bagaimana dengan @Sapaan:kamu
+say=@Tanya:bagaimana @Sapaan:kamu
+say=@Tanya:apa kabar@Sapaan:kamu
+say=@Tanya:apa (kabar|kbr)
+say=@Sapaan:kamu @Tanya:bagaimana
+say=kabar@Sapaan:kamu @Tanya:bagaimana
+say=kabar @Tanya:bagaimana
+say=^kabar
+
+[WordCencor]
+say=sontoloyo
+say=@WordCencor
+
+[Tidak]
+boundary=true
+say=^@Logika:tidak
+
+[Text]
+say=^text

@@ -1,0 +1,4 @@
+
+
+[EchoTest]
+say=echo @Anything

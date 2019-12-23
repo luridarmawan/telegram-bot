@@ -2,7 +2,8 @@
   "systems": {
     "sitename": "Simple Telegram Bot",
     "slogan": "Simple Telegram Bot with FastPlaz",
-    "baseurl": "https://carik.id"
+    "baseurl": "https://carik.id",
+    "debug": false
   },
   "telegram": {
     "default": {
@@ -17,6 +18,32 @@
   "facebook": {
     "default": {
       "token": ""
+    }
+  },
+  "ai": {
+    "default": {
+      "name": "YourBotName",
+      "datasource": "file",
+      "debug": false,
+      "stemming": false,
+      "standard_word_check": true,
+      "basedir": "files/nlp/",
+      "external_nlp": {
+        "enable": false,
+        "url": "http://localhost:8080/api/",
+        "key": ""
+      },
+      "entities": [
+        "main-entities.txt"
+      ],
+      "intents": [
+        "others-intents.txt",
+        "main-intents.txt"
+      ],
+      "response": [
+        "others-response.txt",
+        "main-response.txt"
+      ]
     }
   }
 }
