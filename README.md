@@ -145,6 +145,14 @@ Untuk kebutuhan ini, anda bisa menggunakan [**Carik Bot**](https://carik.id) yan
 
 _*belum tersedia_
 
+## Questions ##
+
+Drop me message or submit [GitHub Issue](https://github.com/luridarmawan/telegram-bot/issues)
+
+## Like It? ##
+
+Fork or Star [this](https://github.com/luridarmawan/telegram-bot)
+
 ## Referensi
 
 - [Carik Telegram Bot - Webhook](https://github.com/luridarmawan/carik)
